@@ -1,0 +1,23 @@
+Notebook[{Cell["Riemann surface explorer", "Title"], 
+  Cell["Evaluate the following cell with Shift+Enter. Keep RiemannSurface.wl \
+in the same directory. This notebook intentionally contains no saved dynamic \
+output. Edit f(z) and press Apply / reset. Im w box sets the visible vertical \
+range; sheet limit bounds rendering when infinitely many sheets intersect it. \
+The angle slider moves the point and trail while dragging; the surface \
+rebuilds on release.", "Text"], Cell[BoxData["Get[FileNameJoin[{NotebookDirec\
+tory[], \"RiemannSurface.wl\"}]];\nrsExplorer[]"], "Input"], 
+  Cell[CellGroupData[{Cell["Usage and numerical scope", "Section"], 
+     Cell["Enter expressions in z, with explicit * or spaces for \
+multiplication. Use Mathematica I for the imaginary unit, e.g. \
+Log[(z+1)(z-1)/(z-I)]. Rational arguments with arbitrary numeric constant \
+exponents (including irrational and complex exponents) and Log are lifted \
+along the polar path. Each reset begins on the principal branch at the \
+current point. All distinct sheets of a finite rational-power family are \
+enumerated up to the sheet limit. Infinitely many sheets cannot all be stored \
+or rendered; the explorer samples monodromy shifts in the visible vertical \
+range up to the limit. Zeros/poles are marked at height zero as projected \
+locations. Historical paths remain visible but old charts are not retained. \
+The mesh joins across displayed chart cuts while omitting singular points. \
+Large jumps and many roots require more time. The phase table scrolls \
+independently.", "Text"]}, Closed]]}, WindowSize -> {960, 740}, 
+ Magnification -> 0.9, StyleDefinitions -> "Default.nb"]
